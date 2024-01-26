@@ -2,6 +2,7 @@ import React from "react";
 import katie from "../images/katie-zaferes.png";
 import mountainbike from "../images/mountain-bike.png";
 import wedding from "../images/wedding-photography.png";
+import star from "../images/star.png"
 
 export default function Card(props) {
     let coverImgUrl;
@@ -35,7 +36,7 @@ export default function Card(props) {
             
             {coverImgUrl && <img src={coverImgUrl} alt="Card Cover" className="card--image" />}
             <div className="card--stats">
-                <img src="../images/star.png" alt="Star" className="card--star" />
+                <img src={star} alt="Star" className="card--star" />
                 <span>{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
